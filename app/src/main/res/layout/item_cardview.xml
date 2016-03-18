@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="Card"
+            type="com.example.yingcanliu.learndesignlib.ViewModel.CardViewModel">
+        </variable>
+    </data>
+    
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/upsky"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{Card.description}"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</layout>
