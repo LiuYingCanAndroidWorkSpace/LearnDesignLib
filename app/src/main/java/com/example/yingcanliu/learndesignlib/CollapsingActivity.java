@@ -27,6 +27,8 @@ public class CollapsingActivity extends AppCompatActivity {
         collapsingToolbar = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         backdrop = (ImageView) findViewById(R.id.backdrop);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("我就静静地看着你上天");
+        toolbar.setCollapsible(false);
     }
 
     @Override

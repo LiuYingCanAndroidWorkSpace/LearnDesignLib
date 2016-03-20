@@ -59,14 +59,12 @@ public class AppBarLayoutActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AppBarLayoutActivity.this, CollapsingActivity.class);
-                startActivity(intent);
-//                Snackbar.make(fab, "Hi~This is Snackbar", Snackbar.LENGTH_LONG).setAction("cancel", new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        Toast.makeText(AppBarLayoutActivity.this, "Hello~", Toast.LENGTH_SHORT).show();
-//                    }
-//                }).show();
+                Snackbar.make(fab, "Hi~This is Snackbar", Snackbar.LENGTH_LONG).setAction("cancel", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(AppBarLayoutActivity.this, "Hello~", Toast.LENGTH_SHORT).show();
+                    }
+                }).show();
             }
         });
     }
