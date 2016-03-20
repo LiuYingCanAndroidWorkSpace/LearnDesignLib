@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.example.yingcanliu.learndesignlib.Adapter.CardAdapter;
 import com.example.yingcanliu.learndesignlib.Model.CardVM;
+import com.example.yingcanliu.learndesignlib.Utils.SetTranslucentStatus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -75,5 +76,6 @@ public class AppBarLayoutActivity extends AppCompatActivity {
         setContentView(R.layout.layout_appbar);
         assignViews();
         assignData();
+        SetTranslucentStatus.setTranslucentStatus(this, true);
     }
 }

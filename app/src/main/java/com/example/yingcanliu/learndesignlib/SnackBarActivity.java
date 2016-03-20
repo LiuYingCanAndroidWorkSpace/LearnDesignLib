@@ -4,6 +4,7 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.view.ViewCompat;
@@ -18,6 +19,7 @@ import android.widget.TextView;
 public class SnackBarActivity extends AppCompatActivity {
 
     private FloatingActionButton fab;
+//    AppBarLayout.ScrollingViewBehavior
 
     private void assignViews() {
         fab = (FloatingActionButton) findViewById(R.id.fab);
